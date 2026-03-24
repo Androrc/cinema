@@ -1,0 +1,52 @@
+/* Estilo do container principal do menu */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: #b80900;
+}
+
+/* Estilo do texto "Cinema" (ou "Meu Blog") */
+.logo-text {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilo da seção que agrupa os links */
+.nav-links {
+  display: flex; 
+  gap: 20px;
+}
+
+/* Estilo dos itens de texto dentro do menu */
+.nav-links p {
+  color: #888;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Efeito opcional: mudar cor ao passar o mouse */
+.nav-links p:hover {
+  color: #ffffff;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 24px;
+  text-align: center; /* Garante que o texto fique centralizado */
+}
+
+.hero-section h2 {
+  margin-bottom: 10px; /* Dá um espacinho entre o título e o texto */
+  color: #ffcc00;      /* Cor de destaque para o cinema */
+}
+
+.hero-section p {
+  color: #888;
+  font-size: 1.1rem;
+}
