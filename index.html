@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema</title>
-    <meta name="description" content="Site sobre cinema e filmes">
+    <title>Site de Filmes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <a href="https://www.cinearaujo.com.br/">Exemplo</a>
-        <a href="https://www.cinemark.com.br/"> Exemplo</a> 
+        <h1>Logo</h1>
 
-        <nav class="navbar-custom">
-            <p class="logo-text">Cinema</p>
-          
-            <section class="nav-links">
-              <p>Início</p>
-              <p>Filmes</p>
-              <p>Sobre</p>
-            </section>
-          </nav>  
+        <div class="header-right">
+            <nav>
+                <a href="#">Contato</a>
+                <a href="#">Promoções</a>
+            </nav>
 
-          <section class="hero-section">
-            <h2>Bem-vindo ao meu Cinema</h2>
-            <p>Artigos sobre filmes e tecnologia</p>
-          </section>       
+            <a class="help-button" href="#">?</a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Filme em Destaque</h2>
-            <article>
-                <h3>Crepúsculo</h3>
-                <p>Descrição do filme, sinopse e informações principais.</p>
-                <p>A estudante Bella Swan conhece Edward Cullen, um belo, mas misterioso adolescente. Edward é um vampiro, cuja família não bebe sangue, e Bella, longe de ficar assustada, se envolve em um romance perigoso com sua alma gêmea imortal.</p>
-                
-                <h3>O Hobbit</h3>
-                <p>Descrição do filme, sinopse e informações principais.</p>
-                <p>Como a maioria dos hobbits, Bilbo Bolseiro leva uma vida tranquila até o dia em que recebe uma missão do mago Gandalf. Acompanhado por um grupo de anões, ele parte numa jornada até a Montanha Solitária para libertar o Reino de Erebor do dragão Smaug.</p>
-            <table>
-                <thead>
-                    <tbody
-                    <tr>
-                        <th>
-                            <th>Sala</th>
-                            <th>Tipo</th>
-                            <th>Horários</th>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Sala 02</td>
-                        <td>Legendado (3D)</td>
-                        <td>16:30, 19:30</td>
-                    </tr>
-                    </tbody>
-                </thead>
-            </table>
-            </article>
-        </section>
+        <div class="layout">
+
+            <aside>
+                <h3>Categorias</h3>
+                <ul>
+                    <li>Ação</li>
+                    <li>Comédia</li>
+                    <li>Drama</li>
+                    <li>Animação</li>
+                </ul>
+            </aside>
+
+            <section>
+                <div class="topo-filmes">
+                    <h2>Em cartaz</h2>
+                    <input type="text" placeholder="Pesquisar filmes...">
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div class="filmes">
+
+                    <div class="filme">
+                        <img src="https://payload.cargocollective.com/1/22/731259/13666441/cartazraposoFINAL-01_1000_800.jpg" alt="Fantastic Mr Fox">
+                        <h3>Fantastic Mr Fox</h3>
+                    </div>
+
+                    <div class="filme">
+                        <img src="https://upload.wikimedia.org/wikipedia/pt/6/67/Emma_2020_Cartaz.jpg" alt="Emma">
+                        <h3>Emma</h3>
+                    </div>
+
+                    <div class="filme">
+                        <img src="https://img.elo7.com.br/product/zoom/3FBA809/big-poster-filme-batman-2022-90x60-cm-lo002-poster-batman.jpg" alt="Batman">
+                        <h3>Batman</h3>
+                    </div>
+
+                    <div class="filme">
+                        <img src="https://www.cafecomfilme.com.br/media/k2/items/cache/ef60364f224305d0b9f19741ec3fdf58_XL.jpg?t=20160620_141556" alt="gentlemen prefer blondes">
+                        <h3>gentlemen prefer blondes</h3>
+                    </div>
+
+                    <div class="filme">
+                        <img src="https://m.media-amazon.com/images/I/81hAG7IEQaL._AC_UF894,1000_QL80_.jpg" alt="Clueless">
+                        <h3>Clueless</h3>
+                    </div>
+
+                    <div class="filme">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_606279-CBT94399484167_102025-O.webp" alt="pirates of the caribbean">
+                        <h3>pirates of the caribbean</h3>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
     </main>
 
-    <aside>
-        <h3>Próximas Estreias</h3>
-        <p>Lista de filmes que estrearão em breve.</p>
-    </aside>
-
     <footer>
-        <p>&copy; 2026 - Site de Cinema</p>
+        <p>© 2026 - Meu site de filmes</p>
+        <p>Contato: contato@email.com</p>
     </footer>
 
 </body>
