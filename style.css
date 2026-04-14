@@ -1,52 +1,137 @@
-/* Estilo do container principal do menu */
-.navbar-custom {
+/* RESET */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #920909;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* MENU */
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ffff00;
+}
+
+/* HELP BUTTON */
+.help-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #920909;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+/* LAYOUT (ASIDE + SECTION) */
+aside {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+section {
+  float: left;
+  width: 75%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* TOPO (EM CARTAZ + PESQUISA) */
+.topo-filmes {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 24px;
-  background-color: #b80900;
+  margin-bottom: 20px;
 }
 
-/* Estilo do texto "Cinema" (ou "Meu Blog") */
-.logo-text {
-  color: #ffffff;
-  font-weight: bold;
+.topo-filmes h2 {
   margin: 0;
 }
 
-/* Estilo da seção que agrupa os links */
-.nav-links {
-  display: flex; 
-  gap: 20px;
+.topo-filmes input {
+  margin-left: auto;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
 }
 
-/* Estilo dos itens de texto dentro do menu */
-.nav-links p {
-  color: #888;
-  margin: 0;
-  cursor: pointer;
+.topo-filmes input:focus {
+  outline: none;
 }
 
-/* Efeito opcional: mudar cor ao passar o mouse */
-.nav-links p:hover {
-  color: #ffffff;
-}
-
-.hero-section {
+/* FILMES GRID (CENTRALIZADO) */
+.filmes {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 48px 24px;
-  text-align: center; /* Garante que o texto fique centralizado */
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-.hero-section h2 {
-  margin-bottom: 10px; /* Dá um espacinho entre o título e o texto */
-  color: #ffcc00;      /* Cor de destaque para o cinema */
+/* CARD FILME */
+.filme {
+  flex: 0 0 30%;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
-.hero-section p {
-  color: #888;
-  font-size: 1.1rem;
+.filme:hover {
+  transform: scale(1.05);
+}
+
+.filme img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  clear: both;
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
